@@ -115,9 +115,9 @@ const Formation = () => {
 		<Card pad="small" background="" gap="medium">
 			<CardHeader>
 				<Image
-					fit="cover"
-					src="//v2.grommet.io/assets/IMG_4245.jpg"
-					a11yTitle="bridge"
+					fit="contain"
+					src="https://media.glassdoor.com/sqll/846886/lyc%C3%A9e-d%C3%A9odat-de-s%C3%A9verac-squarelogo-1409073884391.png"
+					a11yTitle="deodat"
 				/>
 			</CardHeader>
 			<CardBody overflow="auto">
@@ -145,9 +145,9 @@ const Formation = () => {
 	  	<Card pad="small" background="" gap="medium" >
 			<CardHeader>
 				<Image
-					fit="cover"
-					src="//v2.grommet.io/assets/IMG_4245.jpg"
-					a11yTitle="bridge"
+					fit="contain"
+					src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSguQaKXMvAgvg3-bOCR3v45aTKr1AY5PYc0A&usqp=CAU"
+					a11yTitle="Ozenne"
 				/>
 			</CardHeader>
 			<CardBody overflow="auto">
@@ -175,9 +175,9 @@ const Formation = () => {
 		<Card pad="small" background="" gap="medium" >
 				<CardHeader>
 					<Image
-						fit="cover"
-						src="//v2.grommet.io/assets/IMG_4245.jpg"
-						a11yTitle="bridge"
+						fit="contain"
+						src="https://upload.wikimedia.org/wikipedia/fr/thumb/8/8a/Logo_IUT_Blagnac.png/280px-Logo_IUT_Blagnac.png"
+						a11yTitle="IUT blagnac"
 					/>
 				</CardHeader>
 				<CardBody overflow="auto">
@@ -229,9 +229,9 @@ const ExperiencePro = () => {
 	  	<Card pad="small" background="" gap="medium">
 			<CardHeader>
 				<Image
-					fit="cover"
-					src="//v2.grommet.io/assets/IMG_4245.jpg"
-					a11yTitle="bridge"
+					fit="contain"
+					src="https://isociel.fr/wp-content/uploads/2015/03/logo-isociel-retina.png"
+					a11yTitle="isociel"
 				/>
 			</CardHeader>
 			<CardBody overflow="auto">
@@ -257,8 +257,8 @@ const ExperiencePro = () => {
 	  	<Card pad="small" background="" gap="medium">
 			<CardHeader>
 				<Image
-					fit="cover"
-					src="//v2.grommet.io/assets/IMG_4245.jpg"
+					fit="contain"
+					src="https://images.itnewsinfo.com/france-digital/document-inscription/pe8EgyE5bleu_ok.png"
 					a11yTitle="bridge"
 				/>
 			</CardHeader>
@@ -285,8 +285,8 @@ const ExperiencePro = () => {
 	  	<Card pad="small" background="" gap="medium">
 			<CardHeader>
 				<Image
-					fit="cover"
-					src="//v2.grommet.io/assets/IMG_4245.jpg"
+					fit="contain"
+					src="https://www.toulouseinfos.fr/wp-content/uploads/2017/11/logo-jlogiciels.jpg"
 					a11yTitle="bridge"
 				/>
 			</CardHeader>

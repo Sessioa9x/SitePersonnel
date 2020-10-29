@@ -1,6 +1,16 @@
 import React, { Children } from 'react'
-import { Grommet, Main, Header, Heading, Nav, Button, Box, Card, CardHeader, CardBody, CardFooter, Image, Text, Grid } from 'grommet'
-
+import { Grommet, Main, Header, Heading, Nav, Button, Box, Card, CardHeader, CardBody, CardFooter, Image, Text, Grid, Carousel } from 'grommet'
+import robot from './images/robot_2.png';
+import slack from './images/slack.png';
+import messenger from './images/messengerquick.PNG';
+import editor from './images/inline_editore_functions.PNG';
+import dialogflow from './images/dialogflow.PNG';
+import firestore from './images/firestore.PNG';
+import leaflet from './images/logo.png';
+import socket from './images/socket.PNG';
+import resFinal from './images/resFinal.PNG';
+import resultat from './images/resultat.PNG';
+import influx from './images/influx.PNG';
 
 
 const RouterContext = React.createContext({})
@@ -75,6 +85,7 @@ const Accueil = () => {
 		<Button label="Accueil" active color="dark-3" onClick={() => push("/accueil")} />
 		<Button label="Formation" color="dark-3" onClick={() => push("/formation")} />
 		<Button label="Expérience professionnel" color="dark-3" onClick={() => push("/experiencepro")} />
+		<Button label="Projet" color="dark-3" onClick={() => push("/projet")} />
 	  </Nav>
 	  <Box align="center" justify="center" flex={false}>
 		<Heading level="2">
@@ -105,6 +116,7 @@ const Formation = () => {
 		<Button label="Accueil" size="medium" secondary hoverIndicator={false} color="dark-3" onClick={() => push("/accueil")} />
 		<Button label="Formation" hoverIndicator={false} color="dark-3" active onClick={() => push("/formation")} />
 		<Button label="Expérience professionnel" color="dark-3" onClick={() => push("/experiencepro")} />
+		<Button label="Projet" color="dark-3" onClick={() => push("/projet")} />
 	  </Nav>
 	  <Box align="center" justify="center" gap="xxsmall" margin="small" flex={false}>
 		<Heading level="2">
@@ -219,6 +231,7 @@ const ExperiencePro = () => {
 		<Button label="Accueil" active={false} hoverIndicator={false} color="dark-3" onClick={() => push("/accueil")} />
 		<Button label="Formation" color="dark-3" onClick={() => push("/formation")} />
 		<Button label="Expérience professionnel" color="dark-3" active onClick={() => push("/experiencepro")} />
+		<Button label="Projet" color="dark-3" onClick={() => push("/projet")} />
 	  </Nav>
 	  <Box align="center" justify="center" flex="grow">
 		<Heading level="2">
@@ -313,6 +326,96 @@ const ExperiencePro = () => {
   )
 } 
 
+const Projet = () => {
+	const { push } = React.useContext(RouterContext)
+  
+  return (
+	<Main fill overflow="auto">
+	  <Header align="center" direction="row" flex={false} justify="center" gap="medium">
+		<Heading level="1" textAlign="center">
+		  Portfolio Dylan LAGARDE
+		</Heading>
+	  </Header>
+	  <Nav align="center" flex={false} direction="row" justify="center" pad="small" gap="medium">
+		<Button label="Accueil"  color="dark-3" onClick={() => push("/accueil")} />
+		<Button label="Formation" color="dark-3" onClick={() => push("/formation")} />
+		<Button label="Expérience professionnel" color="dark-3" onClick={() => push("/experiencepro")} />
+		<Button label="Projet" active color="dark-3" onClick={() => push("/projet")} />
+	  </Nav>
+	  <Box align="center" justify="center" flex={false}>
+		<Heading level="2">
+		  Projet
+		</Heading>
+	  </Box>
+	  <Box align="center" pad="medium" flex={false} margin="xsmall">
+	  	<Card pad="small" background="" gap="medium">
+			<CardHeader>
+				<Image
+					fit="contain"
+					src={robot}
+					a11yTitle="bridge"
+					height="300px"
+				/>
+			</CardHeader>
+			<CardBody overflow="auto">
+				<Grid columns={["260px", "545px"]} gap="small" margin="1px">
+					<Text size="large" textAlign="end" weight="bold">Desccription : </Text>
+					<Text size="large" textAlign="start" >Création d’un bot / IA qui peut répondre aux utilisateurs, tenir une simple conversation et principalement renvoyer les adresses correspondante aux demandes des utilisateurs et les rediriger sur l’application. </Text>
+					<Text size="large" textAlign="end" weight="bold">Technos : </Text>
+					<Text size="large" textAlign="start" >- Dialogflow <br/>- Firebase (Storage / Functions / Cloud Firestore) </Text>
+					<Text size="large" textAlign="end" weight="bold">Languages : </Text>
+					<Text size="large" textAlign="start" >- Node.js</Text>
+				</Grid>
+			</CardBody>
+			<CardFooter>
+			<Box height="medium" width="large" overflow="hidden" align="center">
+				<Carousel fill>
+					<Image fit="contain" src={slack} />
+					<Image fit="contain" src={messenger} />
+					<Image fit="contain" src={dialogflow} />
+					<Image fit="contain" src={editor} />
+					<Image fit="contain" src={firestore} />
+				</Carousel>
+			</Box>
+			</CardFooter>
+		</Card>
+	  </Box>
+	  <Box align="center" pad="medium" flex={false} margin="xsmall">
+	  	<Card pad="small" background="" gap="medium">
+			<CardHeader>
+				<Image
+					fit="contain"
+					src={leaflet}
+					a11yTitle="bridge"
+					width="300px"
+				/>
+			</CardHeader>
+			<CardBody overflow="auto">
+				<Grid columns={["260px", "545px"]} gap="small" margin="1px">
+					<Text size="large" textAlign="end" weight="bold">Desccription : </Text>
+					<Text size="large" textAlign="start" >Création d'une application web avec une heat-map qui permet de se rendre compte de l'intensité des signaux LoRaWAN</Text>
+					<Text size="large" textAlign="end" weight="bold">Technos : </Text>
+					<Text size="large" textAlign="start" >- Leaflet / OpenStreetMap <br/>- InfluxDB </Text>
+					<Text size="large" textAlign="end" weight="bold">Languages : </Text>
+					<Text size="large" textAlign="start" >- Node.js</Text>
+				</Grid>
+			</CardBody>
+			<CardFooter>
+			<Box height="medium" width="large" overflow="hidden" align="center">
+				<Carousel fill>
+					<Image fit="contain" src={resultat} />
+					<Image fit="contain" src={influx} />
+					<Image fit="contain" src={socket} />
+					<Image fit="contain" src={resFinal} />
+				</Carousel>
+			</Box>
+			</CardFooter>
+		</Card>
+	  </Box>
+	</Main>
+  )
+}
+
 export default () => (
   <Grommet full theme={theme}>
 	<Router>
@@ -320,6 +423,7 @@ export default () => (
 		<Route path="/accueil" Component={Accueil} />
 		<Route path="/formation" Component={Formation} />
 		<Route path="/experiencepro" Component={ExperiencePro} />
+		<Route path="/projet" Component={Projet} />
 	  </Routes>
 	</Router>
   </Grommet>

@@ -1,5 +1,5 @@
 import React, { Children } from 'react'
-import { Grommet, Main, Header, Heading, Nav, Button, Box, Card, CardHeader, CardBody, CardFooter, Image, Text, Grid, Carousel } from 'grommet'
+import { Grommet, Main, Header, Heading, Nav, Button, Box, Card, CardHeader, CardBody, CardFooter, Image, Text, Grid, Carousel, Meter } from 'grommet'
 import robot from './images/robot_2.png';
 import slack from './images/slack.png';
 import messenger from './images/messengerquick.PNG';
@@ -73,7 +73,7 @@ const theme = {
 }
 const Accueil = () => {
 	const { push } = React.useContext(RouterContext)
-  
+	
   return (
 	<Main fill overflow="auto">
 	  <Header align="center" direction="row" flex={false} justify="center" gap="medium">
@@ -89,14 +89,32 @@ const Accueil = () => {
 	  </Nav>
 	  <Box align="center" justify="center" flex={false}>
 		<Heading level="2">
-		  Présentation
+		  Accueil
 		</Heading>
 	  </Box>
-	  <Box align="center" justify="center" flex={false}>
-		<Image src="https://photos.smugmug.com/Pinnacles-May-2019/n-8KLNDR/i-bxkrqwL/0/1c7fa7f2/M/i-bxkrqwL-M.jpg" />
-		<Text size="large" textAlign="center">
-		  ICI la Présentaion
-		</Text>
+	  <Box direction="row" flex={false} width="1000px" margin="auto">
+		<Box direction="column" gap="small" basis="large" background="" pad="small">
+			<Heading level="3">À propos</Heading>
+			<Text size="medium" textAlign="start"><b>Prénom :</b> Dylan </Text>
+			<Text size="medium" textAlign="start"><b>Nom :</b> LAGARDE</Text>
+			<Text size="medium" textAlign="start" ><b>Âge :</b> 21 ans</Text>
+			<Text size="medium" textAlign="start" ><b>Nationalité :</b> Française</Text>
+			<Text size="medium" textAlign="start" ><b>Email :</b> dylan.lagarde25@gmail.com</Text>
+			<Text size="medium" textAlign="start" ><b>Permis :</b> Permis B et véhiculé</Text>
+			<Text size="medium" textAlign="start" ><b>LinkedIn :</b> <a href="https://www.linkedin.com/in/dylan-lagarde-2023b5157" target="about_blank">Voir mon profil</a></Text>
+		</Box>
+		<Box direction="column" background=""  basis="large" pad="small">
+			<Heading level="3">Compétence</Heading>
+			<Text size="medium" weight="bold">PHP</Text>
+			<Meter type="bar" background="light-2" values={[{ value : 70 }]} />
+			<Text  size="medium" weight="bold">C#</Text>
+			<Meter type="bar" background="light-2" values={[{ value : 80 }]} />
+			<Text  size="medium" weight="bold">Java</Text>
+			<Meter type="bar" background="light-2" values={[{ value : 60 }]} />
+			<Text  size="medium" weight="bold">HTML, CSS, JS</Text>
+			<Meter type="bar" background="light-2" values={[{ value : 75 }]} />
+		</Box>
+		<Box  direction="column"></Box>
 	  </Box>
 	</Main>
   )
